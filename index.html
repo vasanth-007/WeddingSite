@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <!-- site metas -->
+    <title>settle</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- fevicon -->
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
+    <!-- Tweaks for older IEs-->
+    <link
+      rel="stylesheet"
+      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+      media="screen"
+    />
+    <link
+      rel="stylesheet"
+      href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css"
+    />
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script
+    ><![endif]-->
+    <style>
+      /* Font */
+      @import url("https://fonts.googleapis.com/css?family=Quicksand:400,700");
+
+      /* Design */
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      .Responsive-main {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .Responsiveh1 {
+        font-size: 24px;
+        font-weight: 400;
+        text-align: center;
+      }
+
+      .card_image img {
+        height: auto;
+        max-width: 100%;
+        vertical-align: middle;
+      }
+
+      .Responsivebtn {
+        color: #ffffff;
+        padding: 0.8rem;
+        font-size: 14px;
+        text-transform: uppercase;
+        border-radius: 4px;
+        font-weight: 400;
+        display: block;
+        width: 100%;
+        cursor: pointer;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background: transparent;
+      }
+
+      .Responsivebtn:hover {
+        background-color: rgba(255, 255, 255, 0.12);
+      }
+
+      .cards {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .cards_item {
+        display: flex;
+        padding: 1rem;
+      }
+
+      @media (min-width: 40rem) {
+        .cards_item {
+          width: 50%;
+        }
+      }
+
+      @media (min-width: 56rem) {
+        .cards_item {
+          width: 33.3333%;
+        }
+      }
+
+      .card {
+        background-color: white;
+        border-radius: 0.25rem;
+        box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+      }
+
+      .card_content {
+        padding: 1rem;
+        background: linear-gradient(to bottom left, #ef8d9c 40%, #ffc39e 100%);
+      }
+
+      .card_title {
+        color: #ffffff;
+        font-size: 1.1rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+        margin: 0px;
+      }
+
+      .card_text {
+        color: #ffffff;
+        font-size: 0.875rem;
+        line-height: 1.5;
+        margin-bottom: 1.25rem;
+        font-weight: 400;
+      }
+      .made_by {
+        font-weight: 400;
+        font-size: 13px;
+        margin-top: 35px;
+        text-align: center;
+      }
+      .galleryrow {
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE10 */
+        flex-wrap: wrap;
+        padding: 0 4px;
+      }
+
+      /* Create four equal columns that sits next to each other */
+      .column {
+        -ms-flex: 25%; /* IE10 */
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+      }
+
+      .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+      }
+
+      /* Responsive layout - makes a two column-layout instead of four columns */
+      @media screen and (max-width: 800px) {
+        .column {
+          -ms-flex: 50%;
+          flex: 50%;
+          max-width: 50%;
+        }
+      }
+
+      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .column {
+          -ms-flex: 100%;
+          flex: 100%;
+          max-width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <!-- body -->
+  <body class="main-layout">
+    <!-- loader  -->
+    <div class="loader_bg">
+      <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+    </div>
+    <!-- end loader -->
+    <!-- top -->
+    <div class="full_bg">
+      <!-- header inner -->
+      <div class="top_section">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-2 col-sm-3 col logo_section">
+              <div class="full">
+                <div class="center-desk">
+                  <div class="logo">
+                    <a href="index.html"
+                      ><img src="images/WeddingOrganizer2.png" alt="#"
+                      style="border-radius: 80px;height: 145px;"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end header inner -->
+      <!-- end header -->
+      <div class="slider_main">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-8">
+              <!-- carousel code -->
+              <div id="carouselExampleIndicators" class="carousel slide">
+                <ol class="carousel-indicators">
+                  <li
+                    data-target="#carouselExampleIndicators"
+                    data-slide-to="0"
+                    class="active"
+                  ></li>
+                  <li
+                    data-target="#carouselExampleIndicators"
+                    data-slide-to="1"
+                  ></li>
+                  <li
+                    data-target="#carouselExampleIndicators"
+                    data-slide-to="2"
+                  ></li>
+                </ol>
+                <div class="carousel-inner">
+                  <!-- first slide -->
+                  <div class="carousel-item active">
+                    <div class="carousel-caption d-md-block cuplle">
+                      <h3 data-animation="animated bounceInLeft">
+                        Wedding Planning
+                      </h3>
+                      <h3 data-animation="animated bounceInLeft">
+                        Catering Services
+                      </h3>
+                      <h3 data-animation="animated bounceInLeft">
+                        Photography
+                      </h3>
+                      <a href="#slidetoabout">
+                        <button
+                          class="btn btn-primary read_more whitebg"
+                          data-animation="animated bounceInLeft"
+                        >
+                          Learn more
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- second slide -->
+                  <div class="carousel-item">
+                    <div class="carousel-caption d-md-block cuplle">
+                      <h3 data-animation="animated bounceInLeft">Music DJ</h3>
+                      <h3 data-animation="animated bounceInLeft">
+                        venue Selection
+                      </h3>
+                      <h3 data-animation="animated bounceInLeft">
+                        Decorations
+                      </h3>
+                      <a href="#slidetoabout">
+                        <button
+                          class="btn btn-primary read_more whitebg"
+                          data-animation="animated bounceInLeft"
+                        >
+                          Learn more
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- third slide -->
+                  <div class="carousel-item">
+                    <div class="carousel-caption d-md-block cuplle">
+                      <h3 data-animation="animated bounceInLeft">
+                        Beauty and Makeup
+                      </h3>
+                      <h3 data-animation="animated bounceInLeft">
+                        Transportations
+                      </h3>
+                      <h3 data-animation="animated bounceInLeft">
+                        Event Rentals
+                      </h3>
+                      <a href="#slidetoabout">
+                        <button
+                          class="btn btn-primary read_more whitebg"
+                          data-animation="animated bounceInLeft"
+                        >
+                          Learn more
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- controls -->
+                <a
+                  class="carousel-control-prev"
+                  href="#carouselExampleIndicators"
+                  role="button"
+                  data-slide="prev"
+                >
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a
+                  class="carousel-control-next"
+                  href="#carouselExampleIndicators"
+                  role="button"
+                  data-slide="next"
+                >
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end banner -->
+    <div id="myHeader" class="header diki">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-sm-12">
+            <nav class="navigation navbar navbar-expand-md navbar-dark">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarsExample04"
+                aria-controls="navbarsExample04"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarsExample04">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">SERVICES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="couple.html">GALLERY</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">ABOUT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Javascript:void(0)">CONTACT</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <div class="col-md-2">
+            <div class="sealo">
+              <ul>
+                <li>
+                  <a href="Javascript:void(0)"><i class="fa fa-search"></i></a>
+                </li>
+                <li><a href="Javascript:void(0)">Login</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Services-->
+
+<!-- Modal -->
+    <div class="Responsive-main" id="slidetoabout">
+      <div style="display: flex; justify-content: center">
+        <span
+          class="Responsiveh1"
+          style="
+            margin-top: 3rem;
+            background: #021626;
+            padding: 1px 55px;
+            color: white;
+            font-size: 50px;
+          "
+        >
+          Services
+        </span>
+      </div>
+      <ul class="cards">
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image">
+              <img src="https://picsum.photos/500/300/?image=10" />
+            </div>
+            <div class="card_content">
+              <h2 class="card_title">Wedding Planning</h2>
+              <p class="card_text">
+                Our wedding planning services offer a comprehensive solution to ensure your special day is flawless and unforgettable
+              </p>
+              <button type="button" class="btn" and style="background-color:transparent;color: white;border: 1px solid;margin-top: 15px;"  data-toggle="modal" data-target="#exampleModalCenter">
+                READ MORE
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      With a team of experienced professionals, we handle every aspect of the planning process, from venue selection and vendor coordination to budget management and timeline creation. Our attention to detail and personalized approach guarantee that your wedding reflects your unique style and vision. Trust us to take care of all the logistics, allowing you to relax and enjoy the journey towards your dream wedding.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image">
+              <img src="https://picsum.photos/500/300/?image=5" />
+            </div>
+            <div class="card_content">
+              <h2 class="card_title">Photography</h2>
+              <p class="card_text">
+                Our photography services offer professional and high-quality images for all your needs
+              </p>
+              <button type="button" class="btn" and style="background-color:transparent;color: white;border: 1px solid;margin-top: 15px;"  data-toggle="modal" data-target="#exampleModalCenter">
+                READ MORE
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Photography</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      We specialize in a variety of photography styles, including portrait, landscape, event, and product photography. Our team uses state-of-the-art equipment and editing software to ensure that your images are of the highest quality.
+
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image">
+              <img src="https://picsum.photos/500/300/?image=11" />
+            </div>
+            <div class="card_content">
+              <h2 class="card_title">Catering Services
+              </h2>
+              <p class="card_text">
+                Our catering services offer a seamless and professional solution for all your event needs.
+              </p>
+              <button type="button" class="btn" and style="background-color:transparent;color: white;border: 1px solid;margin-top: 15px;"  data-toggle="modal" data-target="#exampleModalCenter">
+                READ MORE
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Catering Services
+                      </h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      Whether it's a corporate function, wedding, or private party, our team of experienced chefs and staff will ensure that every detail is taken care of. From menu planning to food preparation and presentation, we strive to deliver exceptional quality and taste. With a wide range of customizable options, we can cater to any dietary restrictions or preferences. Trust us to create a memorable dining experience that will leave your guests impressed.
+
+
+
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image">
+              <img src="https://picsum.photos/500/300/?image=14" />
+            </div>
+            <div class="card_content">
+              <h2 class="card_title">Decorations</h2>
+              <p class="card_text">
+                Our wedding decorations services offer a wide range of options to create a beautiful and memorable ambiance for your special day.
+              </p>
+              <button type="button" class="btn" and style="background-color:transparent;color: white;border: 1px solid;margin-top: 15px;"  data-toggle="modal" data-target="#exampleModalCenter">
+                READ MORE
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Decorations</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      From elegant floral arrangements to stunning lighting designs, our team of experienced professionals will work closely with you to bring your vision to life. Whether you prefer a classic and timeless theme or a modern and unique style, we have the expertise to transform any venue into a dream wedding setting. With attention to detail and a commitment to excellence, our wedding decorations services will ensure that every aspect of your wedding decor is flawless and reflects your personal style.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image">
+              <img src="https://picsum.photos/500/300/?image=17" />
+            </div>
+            <div class="card_content">
+              <h2 class="card_title">Beauty and Makeup
+              </h2>
+              <p class="card_text">
+                Our wedding beauty and makeup services are designed to make you look and feel your best on your special day
+              </p>
+              <button type="button" class="btn" and style="background-color:transparent;color: white;border: 1px solid;margin-top: 15px;"  data-toggle="modal" data-target="#exampleModalCenter">
+                READ MORE
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Beauty and Makeup</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      Our team of professional makeup artists and hairstylists will work closely with you to create a personalized look that enhances your natural beauty and complements your wedding theme. From flawless foundation and stunning eye makeup to elegant hairstyles and perfect nails, we offer a range of services to ensure you feel confident and beautiful from the moment you walk down the aisle. Trust us to make your wedding day truly unforgettable with our exceptional beauty and makeup services.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image">
+              <img src="https://picsum.photos/500/300/?image=2" />
+            </div>
+            <div class="card_content">
+              <h2 class="card_title">Event Rentals
+              </h2>
+              <p class="card_text">
+                Our event rental services offer a wide range of products to make your event a success.
+              </p>
+              <button type="button" class="btn" and style="background-color:transparent;color: white;border: 1px solid;margin-top: 15px;"  data-toggle="modal" data-target="#exampleModalCenter">
+                READ MORE
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Event Rentals</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      Whether you are planning a wedding, corporate event, or private party, our experienced team will work closely with you to understand your vision and provide the right rentals to bring it to life.Our high-quality rental items are meticulously maintained and regularly updated to ensure they are in excellent condition for your event
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image">
+              <img src="https://picsum.photos/500/300/?image=2" />
+            </div>
+            <div class="card_content">
+              <h2 class="card_title">Transportations</h2>
+              <p class="card_text">
+                Our wedding transportation services offer a seamless and luxurious experience for your special day. 
+              </p>
+              <button type="button" class="btn" and style="background-color:transparent;color: white;border: 1px solid;margin-top: 15px;"  data-toggle="modal" data-target="#exampleModalCenter">
+                READ MORE
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Transportations</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      With a fleet of elegant vehicles, including limousines and vintage cars, we ensure that you and your guests arrive in style and comfort. Our professional chauffeurs are experienced and reliable, ensuring a smooth and punctual journey from the ceremony to the reception. Whether you need transportation for the bridal party, family members, or guests, our services can be tailored to meet your specific needs. Trust us to add a touch of elegance to your wedding day
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image">
+              <img src="https://picsum.photos/500/300/?image=2" />
+            </div>
+            <div class="card_content">
+              <h2 class="card_title">venue Selection
+              </h2>
+              <p class="card_text">
+                Our wedding venue selection services offer a stress-free and personalized experience for couples
+              </p>
+              <button type="button" class="btn" and style="background-color:transparent;color: white;border: 1px solid;margin-top: 15px;"  data-toggle="modal" data-target="#exampleModalCenter">
+                READ MORE
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">venue Selection</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      From elegant ballrooms to rustic barns, we have a wide range of options to choose from, ensuring that you find the venue that best suits your style and budget. We also handle all the logistics, including site visits, negotiations, and contracts, so you can focus on enjoying your engagement and planning the rest of your wedding.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image">
+              <img src="https://picsum.photos/500/300/?image=2" />
+            </div>
+            <div class="card_content">
+              <h2 class="card_title">Music DJ
+              </h2>
+              <p class="card_text">
+                . Our wedding Music DJ service is the perfect choice to create an unforgettable atmosphere on your special day. 
+              </p>
+              <button type="button" class="btn" and style="background-color:transparent;color: white;border: 1px solid;margin-top: 15px;"  data-toggle="modal" data-target="#exampleModalCenter">
+                READ MORE
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Music DJ</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      With a vast collection of music genres and personalized playlists, our experienced DJs will ensure that every moment of your wedding is accompanied by the perfect soundtrack. From the ceremony to the reception, our DJs will seamlessly transition between songs, keeping your guests entertained and the dance floor packed. Trust our professional team to provide top-notch sound equipment and lighting to enhance the overall experience. Book our wedding Music DJ service and let us take care of the music, so you can focus on making memories that will last a lifetime.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- gallery -->
+    <!-- Photo Grid -->
+    <div style="display: flex; justify-content: center">
+      <span
+        class="Responsiveh1"
+        style="
+          margin-top: 3rem;
+          background: #021626;
+          padding: 1px 55px;
+          color: white;
+          font-size: 50px;
+        "
+      >
+        Our Gallery
+      </span>
+    </div>
+    <div class="galleryrow">
+      <div class="column">
+        <img src="https://picsum.photos/500/300/?image=2" style="width: 100%" />
+        <img src="https://picsum.photos/500/300/?image=2" style="width: 100%" />
+        <img src="https://picsum.photos/500/300/?image=2" style="width: 100%" />
+        <img src="https://picsum.photos/500/300/?image=2" style="width: 100%" />
+        <img src="https://picsum.photos/500/300/?image=2" style="width: 100%" />
+        <img src="https://picsum.photos/500/300/?image=2" style="width: 100%" />
+        <img src="https://picsum.photos/500/300/?image=2" style="width: 100%" />
+      </div>
+      <div class="column">
+        <img src="https://picsum.photos/500/300/?image=2" style="width: 100%" />
+        <img src="https://picsum.photos/500/300/?image=2" style="width: 100%" />
+        <img src="https://picsum.photos/500/300/?image=2" style="width: 100%" />
+        <img src="https://picsum.photos/500/300/?image=2" style="width: 100%" />
+        <img src="https://picsum.photos/500/300/?image=2" style="width: 100%" />
+        <img src="https://picsum.photos/500/300/?image=2" style="width: 100%" />
+      </div>
+      <div class="column">
+        <img src="https://picsum.photos/500/300/?image=2" style="width: 100%" />
+        <img src="https://picsum.photos/500/300/?image=2" style="width: 100%" />
+        <img src="https://picsum.photos/500/300/?image=2" style="width: 100%" />
+        <img src="https://picsum.photos/500/300/?image=2" style="width: 100%" />
+        <img src="https://picsum.photos/500/300/?image=2" style="width: 100%" />
+        <img src="https://picsum.photos/500/300/?image=2" style="width: 100%" />
+        <img src="https://picsum.photos/500/300/?image=2" style="width: 100%" />
+      </div>
+      <div class="column">
+        <img src="https://picsum.photos/500/300/?image=2" style="width: 100%" />
+        <img src="https://picsum.photos/500/300/?image=2" style="width: 100%" />
+        <img src="https://picsum.photos/500/300/?image=2" style="width: 100%" />
+        <img src="https://picsum.photos/500/300/?image=2" style="width: 100%" />
+        <img src="https://picsum.photos/500/300/?image=2" style="width: 100%" />
+        <img src="https://picsum.photos/500/300/?image=2" style="width: 100%" />
+      </div>
+    </div>
+    <!-- end gallery -->
+    <!-- about -->
+    <div class="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="titlepage text_align_center">
+              <h2>About Us</h2>
+            </div>
+          </div>
+          <div class="col-md-10 offset-md-1">
+            <div class="about_img text_align_center">
+              <figure><img src="images/about.jpg" alt="#" /></figure>
+            </div>
+          </div>
+          <div class="col-md-8 offset-md-2">
+            <div class="about_img text_align_center">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo <br />consequat. Duis aute irure
+                dolor in reprehenderit in voluptate velit<br />
+                esse Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse
+              </p>
+              <a class="read_more" href="about.html">About More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end about -->
+    <!-- couple -->
+    <div class="couple">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-7">
+            <div class="titlepage text_align_left">
+              <span>Our introduction</span>
+              <h2>Meet Happy Couple</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse
+              </p>
+              <a class="read_more whitebg" href="Javascript:void(0)"
+                >See More</a
+              >
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="doi">
+              <figure><img src="images/mul.png" alt="#" /></figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- couple -->
+    <!-- contact -->
+    <div class="contact">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="titlepage text_align_center">
+              <h2>Contact Us</h2>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="mapimg">
+              <div class="google-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3885.0169828634207!2d79.6148613!3d13.1613287!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52a52f6f65da7b%3A0x21595eac236dc850!2sTwo%20Rings!5e0!3m2!1sen!2sin!4v1701169419812!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <form
+              action="mailto:iampugazh2002@gmail.com"
+              id="request"
+              class="main_form"
+              method="post"
+              enctype="text/plain"
+            >
+              <div class="row">
+                <div class="col-md-6">
+                  <label>Name</label>
+                  <input
+                    class="contactus"
+                    placeholder=""
+                    type="type"
+                    name=" Name"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label>Phone Number</label>
+                  <input
+                    class="contactus"
+                    placeholder=""
+                    type="type"
+                    name="Phone Number"
+                  />
+                </div>
+                <div class="col-md-12">
+                  <label>Email</label>
+                  <input
+                    class="contactus"
+                    placeholder=""
+                    type="type"
+                    name="Email"
+                  />
+                </div>
+                <div class="col-md-12">
+                  <label>Message</label>
+                  <textarea
+                    class="textarea"
+                    placeholder=""
+                    type="type"
+                    Message="Name"
+                  ></textarea>
+                </div>
+                <div class="col-md-12">
+                  <input class="send_btn" type="submit" value="Send" />
+                  <!-- <button >Send</button> -->
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- contact -->
+    <!--  footer -->
+    <footer>
+      <div class="footer">
+        <div class="container">
+          <div class="row border_bo1">
+            <div class="col-md-4">
+              <a class="logof" href="index.html"
+                ><img src="images/WeddingOrganizer2.png" alt="#"
+              /></a>
+              <form class="form_subscri">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h3>Subscribe Now</h3>
+                  </div>
+                  <div class="col-md-12">
+                    <input
+                      class="subsrib"
+                      placeholder="Enter your email"
+                      type="text"
+                      name="Enter your email"
+                    />
+                  </div>
+                  <div class="col-md-12">
+                    <button class="subsci_btn">subscribe</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6">
+              <div class="infoma">
+                <h3>Information</h3>
+                <ul>
+                  <li><a style="color: white !important;" href="#">
+                    Privacy Policy</li>
+                  </a>
+                  <li><a style="color: white !important;" href="#">
+                    Terms and Services</li>
+                  </a>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6">
+              <div class="infoma">
+                <h3>Helpful Links</h3>
+                <ul>
+                  <li>Home</li>
+                  <li>Service</li>
+                  <li>Gallary</li>
+                  <li>About</li>
+                  <li>Contact</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6">
+              <div class="infoma">
+                <h3>Contact Us</h3>
+                <ul class="conta">
+                  <li>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <a href="https://www.google.com/maps/place/Two+Rings/@13.1613287,79.6148613,17z/data=!4m15!1m8!3m7!1s0x3a52a52f6f65da7b:0x21595eac236dc850!2sTwo+Rings!8m2!3d13.1612753!4d79.6148737!10e5!16s%2Fg%2F11l5dpq2_h!3m5!1s0x3a52a52f6f65da7b:0x21595eac236dc850!8m2!3d13.1612753!4d79.6148737!16s%2Fg%2F11l5dpq2_h?entry=ttu" target="_blank">
+                      Locations
+                    </a>
+                  </li>
+                  <li>
+                    <i class="fa fa-volume-control-phone" aria-hidden="true"></i
+                    >+71 12345678901
+                  </li>
+                  <li>
+                    <i class="fa fa-envelope" aria-hidden="true"></i
+                    ><a href="Javascript:void(0)">iampugazh2002@gmail.com</a>
+                  </li>
+                </ul>
+                <ul class="social_icon">
+                  <li>
+                    <a href="Javascript:void(0)"
+                      ><i class="fa fa-facebook" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="Javascript:void(0)"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="Javascript:void(0)"
+                      ><i class="fa fa-linkedin-square" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="Javascript:void(0)"
+                      ><i class="fa fa-instagram" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <p>
+                  © 2023 All Rights Reserved.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <!-- sidebar -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script type="text/javascript">
+      baguetteBox.run(".tz-gallery");
+    </script>
+    <script type="text/javascript">
+      window.onscroll = function () {
+        myFunction();
+      };
+
+      var header = document.getElementById("myHeader");
+      var sticky = header.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+    </script>
+  </body>
+</html>
